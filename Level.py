@@ -33,3 +33,22 @@ class Platform1(sprite.Sprite):
         self.image = image.load("%s/blocks/grunt.png" % ICON_DIR)
         self.image.set_colorkey(Color(PLATFORM_COLOR))
         self.rect = Rect(x, y, PLATFORM_WIDTH, PLATFORM_HEIGHT)
+
+
+class Platform2(sprite.Sprite):
+    def __init__(self, x, y):
+        sprite.Sprite.__init__(self)
+        self.image = Surface((PLATFORM_WIDTH, PLATFORM_HEIGHT))
+        self.image.fill(Color(PLATFORM_COLOR))
+        self.image = image.load("%s/blocks/platform2.png" % ICON_DIR)
+        self.image.set_colorkey(Color(PLATFORM_COLOR))
+        self.rect = Rect(x, y, PLATFORM_WIDTH, PLATFORM_HEIGHT)
+
+class Platform3(sprite.Sprite):
+    def __init__(self, x, y):
+        sprite.Sprite.__init__(self)
+        self.image = Surface((PLATFORM_WIDTH, PLATFORM_HEIGHT))
+        self.image.fill(Color(PLATFORM_COLOR))
+        self.image = image.load("%s/blocks/platform3.png" % ICON_DIR)
+        self.image.set_colorkey(Color(PLATFORM_COLOR))
+        self.rect = Rect(x, y, PLATFORM_WIDTH, PLATFORM_HEIGHT)
